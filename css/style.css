@@ -5,6 +5,15 @@
 
 a { color: inherit; text-decoration: none; }
 
+/* ANIMATIONS */
+
+@keyframes blink
+{
+    0% {background-color: #c72c41}
+    50% {background-color: #c7586a}
+    100% {background-color: #c72c41}
+}
+
 /* BODY */
 
 body
@@ -130,6 +139,7 @@ nav
     top: 1em;
     margin: 3em 0 0.5em 0;
     padding: 0 15% 0 15%;
+    z-index: 100;
 }
 
 #nav-container
@@ -153,7 +163,7 @@ nav
 {
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 45%;
 }
 
 #links li
@@ -204,3 +214,141 @@ nav
 
 /* BLOG */
 
+#blog
+{
+    margin-top: 5em;
+}
+
+.section-separator-title
+{
+    width: 80%;
+    margin: auto;
+    background: url("../img/section-separator.png") no-repeat center center;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+article
+{
+    position: relative;
+    width: 65%;
+    margin: auto;
+    padding: 1em;
+}
+
+article:not(:last-child)
+{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.article-container
+{
+    padding: 1em;
+    display: flex;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+.article-container:hover
+{
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.article-image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.article-image img
+{
+    width: 100%;
+    border-bottom: 3px solid #c72c41;
+}
+
+.article-details
+{
+    text-align: justify;
+}
+
+.article-details h3
+{
+    margin-bottom: 0.5em;
+    color: #ee4540;
+    letter-spacing: 1px;
+}
+
+.updated:after
+{
+    content: "New!";
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    transform: rotateZ(-30deg);
+    padding: 0.2em;
+    background-color: #c72c41;
+    border-radius: 5px;
+    text-transform: uppercase;
+    animation-name: blink;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.not-published
+{
+    filter: grayscale(100%);
+    color: #696969;
+}
+
+.not-published .article-container:hover
+{
+    background: transparent;
+}
+
+/* FOOTER */
+
+footer
+{
+    margin-top: 3em;
+    padding: 1em;
+    background: url("../img/footer.png") no-repeat center center;
+    border-top: 3px solid #1c091c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+footer p
+{
+    margin-bottom: 3px;
+}
+
+.footer-links
+{
+    position: relative;
+    margin-left: 3em;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.footer-links:hover
+{
+    border-bottom: 3px solid #c72c41;
+}
+
+.footer-links::before
+{
+    content: " ";
+    position: absolute;
+    width: 1px;
+    top: 0.1em;
+    bottom: 0.1em;
+    left: -1.5em;
+    background-color: rgba(199, 44, 65, 0.5);
+}
