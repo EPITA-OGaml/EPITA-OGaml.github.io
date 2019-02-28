@@ -1,0 +1,124 @@
+
+/* WHAT IS */
+
+#whatis
+{
+    max-width: 1500px;
+    padding: 2em 10em 0 10em;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+#whatis .left
+{
+    max-width: 60%;
+    display: inline-block;
+}
+
+#whatis .right
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#whatis img
+{
+    border: 1px solid rgba(239, 67, 57, 0.3);
+}
+
+#whatis a
+{
+    display: inline-block;
+    margin: 1em;
+    padding: 0.5em 1em 0.5em 1em;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    border: 1px solid rgba(239, 67, 57, 0.5);
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+}
+
+#whatis a:hover
+{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* THE GAME */
+
+section
+{
+    margin: 3em 0;
+}
+
+.section-separator
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    margin-bottom: 1em;
+    background: url("../img/section-separator2.png") no-repeat center center;
+}
+
+.section-separator h3
+{
+    font-size: 1.5em;
+}
+
+section p
+{
+    width: 75%;
+    margin: auto;
+}
+
+section h4
+{
+    margin: 2em 0;
+    text-align: center;
+}
+
+.img-grid ul
+{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+}
+
+.img-grid li
+{
+    width: 25%;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+.img-grid img
+{
+    border: 1px solid #c72c41;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.img-grid li:hover img
+{
+    border: 1px solid #ee4540;
+}
+
+.music-container
+{
+    text-align: center;
+}
+
+.music-container audio
+{
+    width: 50%;
+    border-radius: 5px;
+}
