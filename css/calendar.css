@@ -1,0 +1,176 @@
+
+/* Based on : https://www.w3schools.com/howto/howto_css_timeline.asp */
+
+/* THE TIMELINE */
+
+/* The title */
+h2
+{
+    margin: 2em 0;
+    text-align: center;
+}
+
+
+.timeline
+{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 0 0 0;
+}
+
+/* The vertical line */
+.timeline::after
+{
+    content: ' ';
+    position: absolute;
+    width: 6px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    background: linear-gradient(to bottom, rgba(128, 19, 54, 1) 0%, rgba(128, 19, 54, 0) 100%);
+}
+
+/* Box around content */
+.container
+{
+    position: relative;
+    padding: 10px 40px;
+    width: 50%;
+}
+
+/* The point on the timeline */
+.container::after
+{
+    content: ' ';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #801336;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.left::after
+{
+    top: 30px;
+    right: -12px;
+}
+
+.right::after
+{
+    top: 20px;
+    left: -12px;
+}
+
+/* Put left containers to the left ... */
+.left
+{
+    left: 0;
+}
+
+/* ... And the right ones to the right */
+.right
+{
+    left: 50%;
+}
+
+/* Left arrow */
+.left::before
+{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 32px;
+    right: 30px;
+    border: medium solid #b01c33;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #b01c33;
+    z-index: 1;
+}
+
+.right::before
+{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 22px;
+    left: 30px;
+    border: medium solid #b01c33;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #b01c33 transparent transparent;
+    z-index: 1;
+}
+
+/* The content */
+.content
+{
+    position: relative;
+    padding: 20px 30px;
+}
+
+.left .content
+{
+    background: linear-gradient(to left, rgba(176, 28, 51, 1) 0%, rgba(176, 28, 51, 0) 100%);
+}
+
+.right .content
+{
+    background: linear-gradient(to right, rgba(176, 28, 51, 1) 0%, rgba(176, 28, 51, 0) 100%);
+}
+
+.content ul
+{
+    margin: 0 1.5em;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px)
+{
+    /* Place the timeline to the left */
+    .timeline::after
+    {
+        left: 31px;
+    }
+
+    /* Container now take all the width */
+    .container
+    {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Turn all the arrow to the left */
+    .container::before
+    {
+        left: 60px;
+        border: medium solid #b01c33;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #b01c33 transparent transparent;
+    }
+
+    /* Update background of left containers */
+
+    .left .content
+{
+    background: linear-gradient(to right, rgba(176, 28, 51, 1) 0%, rgba(176, 28, 51, 0) 100%);
+}
+
+    /* Put all the right containers at the same place thant the left ones */
+    .right
+    {
+        left: 0%;
+    }
+
+    /* Put all the circle at the same place */
+    .left::after,
+    .right::after
+    {
+        left: 18px;
+    }
+}

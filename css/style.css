@@ -3,7 +3,7 @@
 
 /* DEFAULT */
 
-* { margin: 0; padding: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 a { color: inherit; text-decoration: none; }
 
@@ -72,7 +72,7 @@ nav
     top: 1em;
     margin: 2em auto;
     padding: 0 15% 0 15%;
-    z-index: 1;
+    z-index: 666;
 }
 
 #nav-container
@@ -120,7 +120,7 @@ nav
     bottom: 0.3em;
     right: -2px;
     width: 2px;
-    background: linear-gradient(to bottom, rgba(128, 19, 54, 0) 0%, rgba(128, 19, 54, 1) 50%, rgba(128, 19, 54, 0) 100%)
+    background: linear-gradient(to bottom, rgba(128, 19, 54, 0) 0%, rgba(128, 19, 54, 1) 50%, rgba(128, 19, 54, 0) 100%);
 }
 
 #links li a
