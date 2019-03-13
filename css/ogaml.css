@@ -1,0 +1,208 @@
+
+/* SECTIONS */
+
+section
+{
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+section .title
+{
+    text-align: center;
+}
+
+/* GROUP */
+
+#group
+{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#group .content
+{
+    position: relative;
+    text-align: justify;
+}
+
+#group .content p
+{
+    margin: 0 auto 2em auto;
+}
+
+#group .content img
+{
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* MEMBERS */
+
+#members .content
+{
+    margin: auto;
+}
+
+.container
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    transition: all 0.1s;
+}
+
+.container:not(:last-child)
+{
+    margin-bottom: 1em;
+}
+
+.container:hover
+{
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+/* Avatars */
+
+.img-container
+{
+    position: relative;
+    padding: 5px;
+    border-bottom: 5px solid;
+}
+
+.container img
+{
+    min-width: 88px;
+    min-height: 184px;
+}
+
+.img-container::after
+{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 -50px 30px -30px transparent;
+    transition: all 0.2s ease;
+}
+
+#guillaume .img-container
+{
+    border-color: #2c87c4;
+}
+
+#guillaume:hover .img-container::after
+{
+    box-shadow: inset 0 -50px 40px -40px #2c87c4;
+}
+
+#marwan .img-container
+{
+    border-color: #692cc4;
+}
+
+#marwan:hover .img-container::after
+{
+    box-shadow: inset 0 -50px 40px -40px #692cc4;
+}
+
+#louis .img-container
+{
+    border-color: #2cc455;
+}
+
+#louis:hover .img-container::after
+{
+    box-shadow: inset 0 -50px 40px -40px #2cc455;
+}
+
+#amayun .img-container
+{
+    border-color: #b32828;
+}
+
+#amayun:hover .img-container::after
+{
+    box-shadow: inset 0 -50px 40px -40px #b32828;
+}
+
+/* Text and tasks list */
+
+.container .text
+{
+    margin: auto 0 auto 2em;
+}
+
+.container .text h3
+{
+    margin-bottom: 1em;
+}
+
+.container .text p
+{
+    margin: 0 0 15px 1em;
+    font-style: italic;
+}
+
+.container .text ul
+{
+    margin-left: 2em;
+    list-style: none;
+}
+
+.container .text li
+{
+    position: relative;
+}
+
+/* Progress bars */
+
+.progress
+{
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 20px;
+    background: linear-gradient(to right, rgba(239, 67, 57, 0.1) 0%, rgba(239, 67, 57, 0) 100%);
+}
+
+.label
+{
+    display: inline-block;
+    width: 170px;
+    text-align: left;
+}
+
+.progress .bar
+{
+    display: inline-block;
+    position: relative;
+    background: #ef4339;
+    height: 100%;
+}
+
+/* Social links */
+
+.container .social
+{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.container .social a
+{
+    font-size: 0.8em;
+    color: #ef4339;
+    text-decoration: underline;
+}
+
