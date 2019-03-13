@@ -85,8 +85,8 @@ section h4
 
 .img-grid ul
 {
-    width: 75%;
     margin: auto;
+    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -95,9 +95,9 @@ section h4
 
 .img-grid li
 {
-    width: 25%;
+    width: 500px;
+    text-align: center;
     padding: 0.5em;
-    box-sizing: border-box;
 }
 
 .img-grid img
@@ -121,4 +121,20 @@ section h4
 {
     width: 50%;
     border-radius: 5px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px)
+{
+    #whatis
+    {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    #whatis .left
+    {
+        max-width: 95%;
+        margin: 0 auto 2em auto;
+    }
 }

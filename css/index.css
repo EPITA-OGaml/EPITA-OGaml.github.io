@@ -179,3 +179,45 @@ article:not(:last-child)
 {
     background: transparent;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px)
+{
+    #showcase
+    {
+        height: 500px;
+    }
+
+    #title h1
+    {
+        font-size: 2em;
+    }
+
+    #whatis
+    {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    #whatis .left
+    {
+        max-width: 95%;
+        margin: 0 auto 2em auto;
+    }
+
+    article
+    {
+        width: 100%;
+    }
+
+    .article-container
+    {
+        flex-direction: column;
+    }
+
+    .article-image
+    {
+        margin-bottom: 2em;
+    }
+}

@@ -63,9 +63,24 @@ section .title
     margin-bottom: 1em;
 }
 
-.container:hover
+#guillaume:hover
 {
-    border: 1px solid rgba(128, 128, 128, 0.5);
+    border: 1px solid rgba(44, 135, 196, 0.5);
+}
+
+#marwan:hover
+{
+    border: 1px solid rgba(105, 44, 196, 0.5);
+}
+
+#louis:hover
+{
+    border: 1px solid rgba(44, 196, 85, 0.5);
+}
+
+#amayun:hover
+{
+    border: 1px solid rgba(179, 40, 40, 0.5);
 }
 
 /* Avatars */
@@ -172,7 +187,7 @@ section .title
     position: relative;
     width: 200px;
     height: 20px;
-    background: linear-gradient(to right, rgba(239, 67, 57, 0.1) 0%, rgba(239, 67, 57, 0) 100%);
+    background: linear-gradient(to right, rgba(239, 67, 57, 0.1) 0%, rgba(239, 67, 57, 0.01) 100%);
 }
 
 .label
@@ -204,5 +219,37 @@ section .title
     font-size: 0.8em;
     color: #ef4339;
     text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px)
+{
+    .container
+    {
+        flex-direction: column;
+    }
+
+    .img-container
+    {
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .container .text
+    {
+        margin: 0;
+    }
+
+    .container .text h3
+    {
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    .container .social
+    {
+        display: none;
+    }
 }
 
