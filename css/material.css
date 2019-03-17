@@ -1,0 +1,36 @@
+
+/* MATERIAL */
+
+table
+{
+    width: 600px;
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 1.2em;
+}
+
+th,
+td
+{
+    padding: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.title
+{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+td a
+{
+    text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px)
+{
+    table
+    {
+        width: 90%;
+    }
+}
