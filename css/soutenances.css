@@ -1,0 +1,60 @@
+
+/* SOUTENANCES */
+
+h2
+{
+    text-align: center;
+    margin: 3em 0;
+}
+
+section
+{
+    max-width: 900px;
+    margin: 3em auto;
+    padding: 0 1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.date
+{
+    display: block;
+    font-size: 0.5em;
+}
+
+section p
+{
+    margin-top: 1em;
+}
+
+section ul
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+section li
+{
+    width: 33%;
+    padding: 1em 0;
+    text-align: center;
+}
+
+section a
+{
+    position: relative;
+    text-decoration: underline;
+    color: #ef4339;
+}
+
+/* TO REMOVE */
+
+footer
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

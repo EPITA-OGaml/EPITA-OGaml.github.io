@@ -63,6 +63,11 @@
     border: 1px solid rgba(239, 67, 57, 0.3);
 }
 
+#whatis p
+{
+    text-indent: 10px;
+}
+
 #whatis a
 {
     display: inline-block;
@@ -137,6 +142,7 @@ article:not(:last-child)
 
 .article-details
 {
+    width: 100%;
     text-align: justify;
 }
 

@@ -30,6 +30,7 @@ section .title
 #group .content p
 {
     margin: 0 auto 2em auto;
+    text-indent: 10px;
 }
 
 #group .content img
@@ -204,6 +205,16 @@ section .title
     background: #ef4339;
     height: 100%;
 }
+
+.physique   { width: 30%; }
+.ctrl-multi { width: 60%; }
+.gm-design  { width: 15%; }
+.audio      { width: 30%; }
+.graph      { width:  5%; }
+.web        { width: 75%; }
+.lvl-design { width: 25%; }
+.menus      { width: 20%; }
+
 
 /* Social links */
 

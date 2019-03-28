@@ -52,7 +52,8 @@
 
 section
 {
-    margin: 3em 0;
+    max-width: 1100px;
+    margin: 3em auto;
 }
 
 .section-separator
@@ -62,7 +63,7 @@ section
     justify-content: center;
     align-items: center;
     height: 45px;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
     background: url("../img/section-separator2.png") no-repeat center center;
 }
 
@@ -73,14 +74,22 @@ section
 
 section p
 {
-    width: 75%;
-    margin: auto;
+    max-width: 1000px;
+    margin: 1em auto;
+    text-align: justify;
+    text-indent: 10px;
 }
 
 section h4
 {
     margin: 2em 0;
     text-align: center;
+}
+
+#docs a
+{
+    color: #ef4339;
+    text-decoration: underline;
 }
 
 .img-grid ul
@@ -136,5 +145,16 @@ section h4
     {
         max-width: 95%;
         margin: 0 auto 2em auto;
+    }
+
+    section p
+    {
+        width: 95%;
+    }
+
+    #docs
+    {
+        width: 80%;
+        margin: auto;
     }
 }
