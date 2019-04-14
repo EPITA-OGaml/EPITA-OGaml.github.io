@@ -1,2 +1,4 @@
-# EPITA-OGaml.github.io
-Website for the OGaml group (S2 Project)
+# OGAML Website
+
+[OGAMLgames.github.io](https://ogamlgames.github.io)
+
