@@ -94,6 +94,11 @@ nav
     box-shadow: 0 0 5px rgba(128, 19, 54, 1);
 }
 
+#mobile-trigger
+{
+    display: none;
+}
+
 #links
 {
     list-style: none;
@@ -251,19 +256,48 @@ footer p
 
 @media screen and (max-width: 600px)
 {
+    nav
+    {
+        top: 0;
+        margin: 0;
+        padding: 0;
+    }
+
     #nav-container
     {
         flex-direction: column;
     }
 
+    #mobile-trigger
+    {
+        display: block;
+        width: 16px;
+        height: 16px;
+        margin: 0.5em 0;
+        background-image: url('../img/icons/bars.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
     #links
     {
-        display: flex;
+        display: none;
         flex-direction: column;
     }
 
     #links li:not(:last-child)::after
     {
         display: none;
+    }
+
+    #play
+    {
+        display: none;
+    }
+
+    #nav-container:hover #links,
+    #nav-container:hover #play
+    {
+        display: flex;
     }
 }
