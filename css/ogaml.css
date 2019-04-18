@@ -36,8 +36,6 @@ section .title
 #group .content img
 {
     display: block;
-    width: 128px;
-    height: 128px;
     margin: 0 auto;
     border-radius: 10px;
 }
