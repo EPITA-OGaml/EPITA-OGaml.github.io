@@ -10,8 +10,8 @@ h2
 section
 {
     max-width: 900px;
-    margin: 3em auto;
-    padding: 0 1em;
+    margin: 0 auto;
+    padding: 2em 1em;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -50,11 +50,14 @@ section a
     color: #ef4339;
 }
 
-/* TO REMOVE */
+/* TABLE */
 
-footer
+table
 {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    width: 700px;
+}
+
+td.text
+{
+    text-align: justify;
 }

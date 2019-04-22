@@ -47,6 +47,7 @@
 
 section
 {
+    position: relative;
     max-width: 1100px;
     margin: 3em auto;
 }
@@ -90,7 +91,7 @@ section h4
 .img-grid ul
 {
     margin: auto;
-    max-width: 1000px;
+    max-width: 1024px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -99,7 +100,7 @@ section h4
 
 .img-grid li
 {
-    width: 500px;
+    width: 256px;
     text-align: center;
     padding: 0.5em;
 }
@@ -107,6 +108,8 @@ section h4
 .img-grid img
 {
     border: 1px solid #c72c41;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
     transition: all 0.1s;
 }
@@ -127,7 +130,52 @@ section h4
     border-radius: 5px;
 }
 
+/* SIDE IMAGES */
+
+#story::before,
+#story::after,
+#gameplay::after
+{
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 184px;
+}
+
+#story::before
+{
+    top: 25%;
+    left: -15%;
+    transform: rotate(15deg);
+    background: url('../img/avatars/spazon.png');
+}
+
+#story::after
+{
+    bottom: 5%;
+    right: -15%;
+    transform: rotate(5deg) scaleX(-1);
+    background: url('../img/avatars/theus.png');
+}
+
+#gameplay::after
+{
+    bottom: 0%;
+    left: -5%;
+    background: url('../img/avatars/cyberpunk.png');
+}
+
 /* MEDIA QUERIES */
+@media screen and (max-width: 1500px)
+{
+    #story::before,
+    #story::after,
+    #gameplay::before
+    {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 600px)
 {
     #whatis
