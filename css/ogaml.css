@@ -204,14 +204,14 @@ section .title
     height: 100%;
 }
 
-.physique   { width: 30%; }
-.ctrl-multi { width: 60%; }
-.gm-design  { width: 15%; }
-.audio      { width: 30%; }
-.graph      { width:  5%; }
-.web        { width: 75%; }
-.lvl-design { width: 25%; }
-.menus      { width: 20%; }
+.physique   { width: 60%; }
+.ctrl-multi { width: 90%; }
+.gm-design  { width: 50%; }
+.audio      { width: 60%; }
+.graph      { width: 60%; }
+.web        { width: 90%; }
+.lvl-design { width: 60%; }
+.menus      { width: 60%; }
 
 
 /* Social links */
