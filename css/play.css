@@ -127,19 +127,10 @@ td.last
 
 /* CONTROLS */
 
-#controls article
-{
-    margin-top: 3em;
-}
-
-#controls h4
-{
-    margin-bottom: 2em;
-}
-
 #controls img
 {
     width: 100%;
+    margin-top: 3em;
 }
 
 /* OLDERS */
@@ -184,4 +175,12 @@ td.last
 .release .ver
 {
     color: green;
+}
+
+/* OVELAY */
+
+#overlay-img
+{
+    padding: 1em;
+    background: #333333;
 }

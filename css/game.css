@@ -43,6 +43,11 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
+#whatis img
+{
+    width: 200px;
+}
+
 /* THE GAME */
 
 section
@@ -101,6 +106,7 @@ section h4
 .img-grid li
 {
     width: 256px;
+    height: 140px;
     text-align: center;
     padding: 0.5em;
 }

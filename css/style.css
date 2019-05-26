@@ -334,4 +334,9 @@ footer p
     {
         display: flex;
     }
+
+    #overlay-img
+    {
+        width: 80%;
+    }
 }
