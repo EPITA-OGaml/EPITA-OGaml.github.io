@@ -41,7 +41,8 @@ h2
 }
 
 /* The point on the timeline */
-.container::after
+.left::after,
+.right::after
 {
     content: ' ';
     position: absolute;
@@ -75,6 +76,13 @@ h2
 .right
 {
     left: 50%;
+}
+
+/* Center container */
+.center
+{
+    left: 25%;
+    margin-top: 3em;
 }
 
 /* Left arrow */
@@ -123,6 +131,11 @@ h2
     background: linear-gradient(to right, rgba(176, 28, 51, 1) 0%, rgba(176, 28, 51, 0) 100%);
 }
 
+.center .content
+{
+    background-color: rgba(176, 28, 51, 1);
+}
+
 .content ul
 {
     margin: 0 1.5em;
@@ -163,12 +176,13 @@ h2
     /* Update background of left containers */
 
     .left .content
-{
-    background: linear-gradient(to right, rgba(176, 28, 51, 1) 0%, rgba(176, 28, 51, 0) 100%);
-}
+    {
+        background: linear-gradient(to right, rgba(176, 28, 51, 1) 0%, rgba(176, 28, 51, 0) 100%);
+    }
 
     /* Put all the right containers at the same place thant the left ones */
-    .right
+    .right,
+    .center
     {
         left: 0%;
     }
